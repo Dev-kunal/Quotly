@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+}
+.App {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  color: #16213e;
+  height: 100%;
+  overflow: hidden;
+  background-image: linear-gradient(-45deg, #e176ef, #408fd0);
+  /* background-image: linear-gradient(-45deg, #16213e, #322f3d); */
+}
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  padding: 0 1.2rem;
+  height: 85vh;
+}
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quote-container {
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 10px;
+}
+.author {
+  font-weight: 500;
+}
+.heading {
+  text-align: center;
+  position: relative;
+  top: 12vh;
+  margin: 0;
+}
+footer {
+  position: relative;
+  bottom: 8vh;
+  text-align: center;
+  font-weight: 200;
+}
+.btn {
+  font-weight: bolder;
+  color: #16213e;
+  margin-top: 5vh;
+  padding: 1rem 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.btn:focus {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}

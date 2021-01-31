@@ -17,7 +17,7 @@ export default function App() {
   }, []);
   function handleResponse(response) {
     setInterval(() => {
-      setQuote(response.data[Math.floor(Math.random() * 100)]);
+      setQuote(response.data[Math.floor(Math.random() * 1600)]);
     }, 9000);
   }
   return (
@@ -28,7 +28,7 @@ export default function App() {
           <h2>{quote.text}</h2>
           <span className="author">-{quote.author} </span>
         </div>
-        <button className="btn"> Next </button>
+        {/* <button className="btn"> Next </button> */}
       </div>
       <footer>
         <h6>Made with ❤ By Kunal</h6>

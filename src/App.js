@@ -11,12 +11,15 @@ export default function App() {
     axios
       .get("https://type.fit/api/quotes")
       .then((response) => {
-        setQuote(response.data[79]);
-        // console.log(response.data[0]);
+        handleResponse(response);
       })
       .catch((err) => console.log(err));
   }, []);
-
+  function handleResponse(response) {
+    setInterval(() => {
+      setQuote(response.data[Math.floor(Math.random() * 100)]);
+    }, 9000);
+  }
   return (
     <div className="App">
       <h1 className="heading">Quot.ly</h1>

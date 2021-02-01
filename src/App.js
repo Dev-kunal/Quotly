@@ -5,7 +5,7 @@ import axios from "axios";
 export default function App() {
   const [quote, setQuote] = useState({
     author: "Quot.ly",
-    text: "Nothing fancy you'll get a quote after each 9 seconds"
+    text: "Nothing fancy, you'll get a quote after each 9 seconds just wait..!"
   });
   useEffect(() => {
     axios
